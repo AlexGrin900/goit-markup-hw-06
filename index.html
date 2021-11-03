@@ -448,16 +448,76 @@
             </li>
           </ul>
         </div>
+        <!-- footer-form -->
+        <div class="footer-item">
+          <h2 class="social-title title">Подпишитесь на рассылку</h2>
+
+          <form action="#">
+            <div class="mail-form">
+              <input
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                class="input-field"
+              />
+
+              <button type="submit" class="button-subscription">
+                Подписаться
+                <svg class="icon-form" width="24" height="24" class="icon-form">
+                  <use href="./images/sprite.svg#icon-form"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
+    <!-- modal-window -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <form action="#">
-          <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
-          <label for="name">Имя</label>
-          <br />
-          <input type="text" name="user-name" id="name" />
+          <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
+
+          <div class="inputs">
+            <label for="name">Имя</label>
+
+            <input
+              type="text"
+              name="user-name"
+              id="name"
+              class="online-input"
+            />
+
+            <label for="tel">Телефон</label>
+
+            <input type="tel" name="user-tel" id="tel" class="online-input" />
+
+            <label for="email">Почта</label>
+
+            <input
+              type="email"
+              name="user-email"
+              id="email"
+              class="online-input"
+            />
+          </div>
+
+          <label for="comment">Комментарий</label>
+          <textarea
+            name="comment"
+            id="comment"
+            placeholder="Введите текст"
+          ></textarea>
+
+          <label for="policy"
+            >Соглашаюсь с рассылкой и принимаю
+            <a href="./" class="form-link">Условия договора</a>
+          </label>
+          <input type="checkbox" name="policy" id="policy" />
+
+          <button type="submit">Отправить</button>
         </form>
+
         <button type="button" class="button-close" data-modal-close>
           <svg class="icon-close" width="18" height="18">
             <use href="./images/sprite.svg#icon-close"></use>
