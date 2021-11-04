@@ -384,8 +384,10 @@ address {
 .social-link:hover,
 .social-link:focus {
   background-color: var(--accent-color);
+  color: var(--white-color);
+  /* также ховер для карточек с сотрудниками */
 }
-
+/* также ховер для карточек с сотрудниками */
 .text-item {
   margin-left: 30px;
 
