@@ -343,16 +343,16 @@ address {
   align-items: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  transition: border var(--transition-hover);
+  transition: border var(--transition-hover), color var(--accent-color);
+  color: var(--primary-icon-color);
 }
 .client-icon {
-  fill: var(--primary-icon-color);
-  transition: ;
+  fill: currentColor;
 }
 .client-link:hover,
 .client-link:focus {
   border: 1px solid var(--accent-color);
-  fill: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .client-link:hover .client-icon,
@@ -384,7 +384,6 @@ address {
 .social-link:hover,
 .social-link:focus {
   background-color: var(--accent-color);
-  color: var(--white-color);
 }
 
 .text-item {
@@ -535,6 +534,7 @@ address {
 }
 .footer-social-link {
   background-color: rgba(255, 255, 255, 0.1);
+  color: var(--white-color);
 }
 .footer-social-icon {
   fill: var(--white-color);
@@ -584,7 +584,7 @@ address {
   transform: scale(1);
   transition: transform var(--transition-hover), opacity var(--transition-hover);
 }
-
+/* modal-form */
 .button-close {
   display: flex;
   justify-content: center;
@@ -600,7 +600,7 @@ address {
   justify-content: center;
   align-items: center;
 }
-/* modal-form */
+
 .icon-close {
   transition: fill var(--transition-hover);
 }
