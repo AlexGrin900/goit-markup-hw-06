@@ -121,6 +121,8 @@ address {
   font-size: 26px;
   line-height: 1.19;
   color: var(--accent-color);
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .logo-s {
   color: var(--title-text-color);
@@ -308,25 +310,24 @@ address {
 
 .team-item {
   flex-basis: calc(100% / 4 - 30px);
-  margin-top: 30px;
   margin-left: 30px;
-}
-.team-img {
-  margin-bottom: 30px;
-}
-.team-item {
   background: var(--white-color);
-
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   text-align: center;
-  padding-bottom: 30px;
-  margin-bottom: 30px;
+}
+.team-card-set {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--card-set-margin));
+}
+.team-info {
+  padding: 30px 32px 30px 32px;
 }
 
 .name {
-  margin-bottom: 4px;
+  margin-bottom: 10px;
 }
 .position {
   margin-bottom: 16px;
@@ -376,14 +377,17 @@ address {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  transition: background-color var(--transition-hover),
-    color var(--transition-hover);
+  color: var(--primary-icon-color);
+  transition: background-color var(--transition-hover);
+  /* transition: background-color var(--transition-hover),
+    color var(--transition-hover); */
 }
 .social-item + .social-item {
   margin-left: 10px;
 }
 .social-icon {
   fill: currentColor;
+  transition: color var(--transition-hover);
 }
 
 .social-link:hover,
@@ -510,7 +514,12 @@ address {
 .card-heading {
   margin-bottom: 4px;
 }
-.footer .logo {
+.footer-logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-color);
   margin-bottom: 20px;
   display: block;
 }
