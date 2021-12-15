@@ -180,8 +180,10 @@ address {
 
   display: flex;
   justify-content: center;
-  margin-right: 30px;
   transition: color var(--transition-hover);
+}
+.header-item-post {
+  margin-right: 30px;
 }
 .link-phone {
   font-weight: 500;
