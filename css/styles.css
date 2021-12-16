@@ -139,6 +139,7 @@ address {
   padding-top: 32px;
   padding-bottom: 32px;
   display: block;
+  transition: color var(--transition-hover);
 }
 .current {
   position: relative;
@@ -177,7 +178,6 @@ address {
   letter-spacing: 0.02em;
   padding-top: 32px;
   padding-bottom: 32px;
-
   display: flex;
   justify-content: center;
   transition: color var(--transition-hover);
@@ -488,7 +488,7 @@ address {
 }
 .link-card:hover .project-top-text,
 .link-card:focus .project-top-text {
-  transform: translateY(0);
+  transform: translateY(101%);
 }
 .project-top-wrapper {
   position: relative;
