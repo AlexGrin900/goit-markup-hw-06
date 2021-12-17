@@ -401,7 +401,7 @@ address {
 /* также ховер для карточек с сотрудниками */
 .text-item {
   margin-left: 30px;
-
+  margin-top: 30px;
   flex-basis: calc(100% / 4 - 30px);
 }
 .adventage-item {
@@ -565,12 +565,12 @@ address {
   margin-bottom: 20px;
 }
 .footer-item:not(:last-child) {
-  margin-right: 70px;
+  margin-right: auto;
 }
 
-.footer-item:last-child {
+/* .footer-item:last-child {
   margin-left: auto;
-}
+} */
 
 /* modal-window */
 .backdrop {
@@ -579,9 +579,10 @@ address {
   width: 100vw;
   height: 100vh;
   top: 0;
-  display: flex;
+  left: 0;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
   transition: opacity var(--transition-hover),
     visibility var(--transition-hover);
 }
@@ -595,7 +596,10 @@ address {
   opacity: 0;
 }
 .modal {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 528px;
   height: 581px;
   padding: 40px;
@@ -604,7 +608,7 @@ address {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  transform: scale(1);
+  /* transform: scale(1); */
   transition: transform var(--transition-hover), opacity var(--transition-hover);
 }
 /* modal-form */
