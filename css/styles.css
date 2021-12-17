@@ -327,9 +327,15 @@ address {
 .team-info {
   padding: 30px 32px 30px 32px;
 }
-
+.product-name {
+  font-weight: 700;
+  color: var(--title-text-color);
+  margin-bottom: 4px;
+}
 .name {
   margin-bottom: 10px;
+  font-weight: 700;
+  color: var(--title-text-color);
 }
 .position {
   margin-bottom: 16px;
@@ -488,7 +494,7 @@ address {
 }
 .link-card:hover .project-top-text,
 .link-card:focus .project-top-text {
-  transform: translateY(101%);
+  transform: translateY(0%);
 }
 .project-top-wrapper {
   position: relative;
@@ -503,7 +509,7 @@ address {
   padding: 63px 24px;
   top: 0;
   height: 100%;
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .card-content {
@@ -511,10 +517,6 @@ address {
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
-}
-
-.card-heading {
-  margin-bottom: 4px;
 }
 .footer-logo {
   font-family: Raleway;
@@ -684,6 +686,7 @@ address {
   fill: var(--accent-color);
 }
 .modal-text-input {
+  display: block;
   width: 100%;
   height: 120px;
   border-radius: 4px;
@@ -728,6 +731,11 @@ address {
   justify-content: center;
   margin-bottom: 30px;
 }
+.modal-checkbox:focus + .checkbox-text span,
+.modal-checkbox:hover + .checkbox-text span {
+  border: 2px solid var(--accent-color);
+}
+
 .checkbox-text span {
   width: 16px;
   height: 15px;
@@ -737,6 +745,7 @@ address {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
   transition: background-color var(--transition-hover),
     border var(--transition-hover);
 }
